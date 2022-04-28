@@ -1,5 +1,14 @@
-<div *ngFor="let item of transferencias">
-  <p>Data: {{ item?.data }}</p>
-  <p>Valor: {{ item?.valor }}</p>
-  <p>Destino:{{ item?.destino }}</p>
-</div>
+<table>
+  <thead>
+    <th>Valor</th>
+    <th>Destino</th>
+    <th>Data</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of transferencias">
+      <td>{{ item.valor | currency }}</td>
+      <td>{{ item.destino }}</td>
+      <td>{{ item.data | date: "short" }}</td>
+    </tr>
+  </tbody>
+</table>
