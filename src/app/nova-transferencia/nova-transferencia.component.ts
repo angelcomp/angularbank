@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { Component } from "@angular/core";
 
 @Component({
@@ -8,4 +9,7 @@ import { Component } from "@angular/core";
 
 export class NovaTransferenciaComponent {
 
+  transferir() {
+    console.log('Solicitada nova transferência')
+  }
 }
