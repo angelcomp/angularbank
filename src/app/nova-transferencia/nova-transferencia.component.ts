@@ -1,4 +1,3 @@
-import { FormsModule } from '@angular/forms';
 import { Component } from "@angular/core";
 
 @Component({
@@ -9,7 +8,12 @@ import { Component } from "@angular/core";
 
 export class NovaTransferenciaComponent {
 
+  valor: Number
+  destino: Number
+
   transferir() {
     console.log('Solicitada nova transferência')
+    console.log('Valor: ', this.valor)
+    console.log('Destino: ', this.destino)
   }
 }

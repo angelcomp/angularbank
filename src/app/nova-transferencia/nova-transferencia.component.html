@@ -4,12 +4,24 @@
 
     <div class="form-field">
       <label class="form-field__label" for="valor">Valor</label>
-      <input class="form-field__input" id="valor" type="text" />
+      <input
+        class="form-field__input"
+        id="valor"
+        type="text"
+        name="valor"
+        [(ngModel)]="valor"
+      />
     </div>
 
     <div class="form-field">
       <label class="form-field__label" for="destino">Destino</label>
-      <input class="form-field__input" id="destino" type="text" />
+      <input
+        class="form-field__input"
+        id="destino"
+        type="text"
+        name="destino"
+        [(ngModel)]="destino"
+      />
     </div>
 
     <div class="botao-wrapper">
