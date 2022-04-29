@@ -1,14 +1,14 @@
-<table>
-  <thead>
-    <th>Valor</th>
-    <th>Destino</th>
-    <th>Data</th>
+<table class="tabela">
+  <thead class="tabela__cabecalho">
+    <th class="tabela__cabecalho__conteudo">Valor</th>
+    <th class="tabela__cabecalho__conteudo">Destino</th>
+    <th class="tabela__cabecalho__conteudo">Data</th>
   </thead>
   <tbody>
-    <tr *ngFor="let item of transferencias">
-      <td>{{ item.valor | currency }}</td>
-      <td>{{ item.destino }}</td>
-      <td>{{ item.data | date: "short" }}</td>
+    <tr class="tabela__linha" *ngFor="let item of transferencias">
+      <td class="tabela__conteudo">{{ item.valor | currency }}</td>
+      <td class="tabela__conteudo">{{ item.destino }}</td>
+      <td class="tabela__conteudo">{{ item.data | date: "short" }}</td>
     </tr>
   </tbody>
 </table>
