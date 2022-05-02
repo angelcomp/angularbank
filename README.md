@@ -1,6 +1,6 @@
 # AngularBank
 
-Projeto de aprendizado à Angular, desenvolvido através do curso da Alura.
+Projeto de aprendizado à plataforma Angular, desenvolvido no curso da [Alura](https://cursos.alura.com.br/course/angular-comecando-framework).
 
 
 # To run
